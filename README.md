@@ -13,15 +13,14 @@
 
 ### Declaring variables
 
-    ```js
-    var variableName = "value of variable";
-    ```
+```js
+var variableName = "value of variable";
+```
 
 The data type of the value can change - it is dynamically typed.
-
-    ```js
-    variableName = 8;
-    ```
+```js
+variableName = 8;
+```
 
 There are three ways of assigning values to some location in memory:
 
@@ -35,7 +34,7 @@ it's good practice to use only let and const.
 
 #### Use strict
 
-```
+```js
 "use strict";
 ```
 
@@ -70,7 +69,7 @@ It's not necessary but it's good practice to show where the lines end.
 There are three methods by which you can accomplish this:
 
 + backslash: \
-+ backticks: ` `
++ backticks: `
 + use the other kind of quotes
 
 ### Strings
@@ -186,23 +185,21 @@ var drinkValue = testObject["the drink"];
 
 #### Adding and Deleting Object Properties
 
-1. Adding
+There are two means of adding properties:
 
-There are two ways:
+1. Dot notation:
 
-    1. Dot notation:
+```js
+testObject.mainCourse = "pasta"
+```
 
-    ```js
-    testObject.mainCourse = "pasta"
-    ```
+2. Bracket notation:
 
-    2. Bracket notation:
+```js
+testObject[mainCourse] = "pizza"
+```
 
-    ```js
-    testObject[mainCourse] = "pizza"
-    ```
-
-2. Deleting
+Deleting properties:
 
 ```js
 delete testObject.mainCourse
